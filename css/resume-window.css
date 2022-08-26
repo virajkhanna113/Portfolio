@@ -1,0 +1,89 @@
+.resume {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: var(--red);
+  width: 500px;
+  max-width: 80%;
+}
+
+.resume.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-height: 800px) {
+  .resume.active {
+    transform: translate(-40%, -40%) scale(1);
+  }
+}
+
+.resume-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.resume-header .resume-title {
+  font-size: 12.5px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.resume-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-body {
+  width: 100%;
+  height: 700px;
+}
+
+@media (max-width: 800px) {
+  .resume.active {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 720px) {
+  .resume-body {
+    height: 600px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resume-body {
+    height: 500px;
+  }
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

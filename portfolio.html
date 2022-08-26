@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Viraj Khanna Portfolio</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/resume-window.css">
+    <script src="popup.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/01aca4c489.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <a class="page-parts" href="#about-me">About</a>
+          <a class="page-parts" href="#my-projects">Projects</a>
+          <a class="page-parts" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about-me" class="about-me-page">
+        <div>
+          <h1>Hey I am Viraj</h1>
+        </div>
+        <div class="contact-links">
+          <a  class="link" href="https://github.com/virajkhanna113" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            Git Hub
+          </a>
+        </div>
+        <div class="about-me-text">
+          <p>Front-End Developer and Designer currently residing in New Delhi, India. I have experience working with <span>JavaScript</span>, <span>React</span>, <span>HTML</span>, <span>and CSS</span></span>.</p>
+          <p>I am passionate about building interactive UI for cllient-facing and internal projects with a focus on UX.</p>
+          <p>You can check out my resume here: 
+            <span>
+              <button data-modal-target="#resume">Viraj Khanna Resume</button>
+              <div class="resume" id="resume">
+                <div class="resume-header">
+                  <div class="resume-title">My Resume</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+                <iframe class="resume-body" src="my-resume/Resume.pdf"></iframe>
+              </div>
+              <div id="overlay"></div>
+            </span>
+          </p>
+          <p>Some of the tools I enjoy using:</p>
+          <div class="tool-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-git"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="my-projects" class="project-page">
+        <div class="project-header">
+          <h2>These are some of my projects</h2>
+        </div>
+        <div class="projects">
+          <div class="projects-grid">
+            <button class="project-link" data-modal-target="#modal1">
+              <img class="project-image" src="https://user-images.githubusercontent.com/109019408/186641953-1890bc88-ceec-457c-a00e-c6f9a6fb4af7.png" alt="project image">
+              <div class="project-title">
+                <span class="bracket">&lt;</span>
+                  Restaurant Reservation
+                <span class="bracket">/&gt;</span>
+              </div>
+            </button>
+            <div class="modal" id="modal1">
+              <div class="modal-header">
+                <div class="title">Restaurant Reservation Website Project</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img class="popup-image" src="https://user-images.githubusercontent.com/109019408/186641953-1890bc88-ceec-457c-a00e-c6f9a6fb4af7.png" alt="project image">
+                <div class="about-project">
+                  <h2>Languages used</h2>
+                  <div class="language-container">
+                    <div>JavaScript</div>
+                    <div>HTML</div>
+                    <div>CSS</div>
+                  </div>
+                  <hr>
+                  <div class="project-description">
+                    <h4>About Project</h4>
+                    <p>A website project to make reservations for a restaurant and filter nearby restaurants based on your area.</p>
+                  </div>
+                  <div class="project-site">
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://github.com/virajkhanna113/Restaurant-Reservation-Website-Project" target="_blank">Code</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://codepen.io/virajkhanna113/full/xxWBweK" target="_blank">Hosted</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+
+          <div class="projects-grid">
+            <button class="project-link" data-modal-target="#modal2">
+              <img class="project-image" src="images/js-calculator.png" alt="project image">
+              <div class="project-title">
+                <span class="bracket">&lt;</span>
+                  JavaScript Calculator
+                <span class="bracket">/&gt;</span>
+              </div>
+            </button>
+            <div class="modal" id="modal2">
+              <div class="modal-header">
+                <div class="title">JavaScript Calculator</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img class="popup-image" src="https://user-images.githubusercontent.com/109019408/184858359-4b594fad-3ec3-49c4-8455-4d861612cfd0.png" alt="project image">
+                <div class="about-project">
+                  <h2>Languages used</h2>
+                  <div class="language-container">
+                    <div>JavaScript</div>
+                    <div>HTML</div>
+                    <div>CSS</div>
+                  </div>
+                  <hr>
+                  <div class="project-description">
+                    <h4>About Project</h4>
+                    <p>A calculator made with JavaScript that can perform basic mathematical functions.</p>
+                  </div>
+                  <div class="project-site">
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://github.com/virajkhanna113/JavaScript-Calculator" target="_blank">Code</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://codepen.io/virajkhanna113/full/oNqQWQg" target="_blank">Hosted</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+
+          <div class="projects-grid">
+            <button class="project-link" data-modal-target="#modal3">
+              <img class="project-image" src="https://user-images.githubusercontent.com/109019408/186658834-3643eb33-78d7-4f37-86ec-3420cb671393.png" alt="project image">
+              <div class="project-title">
+                <span class="bracket">&lt;</span>
+                  Rock Paper Scissors
+                <span class="bracket">/&gt;</span>
+              </div>
+            </button>
+            <div class="modal" id="modal3">
+              <div class="modal-header">
+                <div class="title">Rock Paper Scissors Game Project</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img class="popup-image" src="https://user-images.githubusercontent.com/109019408/186658834-3643eb33-78d7-4f37-86ec-3420cb671393.png" alt="project image">
+                <div class="about-project">
+                  <h2>Languages used</h2>
+                  <div class="language-container">
+                    <div>JavaScript</div>
+                    <div>HTML</div>
+                    <div>CSS</div>
+                  </div>
+                  <hr>
+                  <div class="project-description">
+                    <h4>About Project</h4>
+                    <p>A rock, paper, scissors game where you play against the computer.</p>
+                  </div>
+                  <div class="project-site">
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://github.com/virajkhanna113/Rock-Paper-Scissors-Game-Project" target="_blank">Code</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://codepen.io/virajkhanna113/full/VwXOagx" target="_blank">Hosted</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+          
+          <div class="projects-grid">
+            <button class="project-link" data-modal-target="#modal4">
+              <img class="project-image" src="https://user-images.githubusercontent.com/109019408/184623769-db2d8cdd-af9a-41f8-97a3-9ca53860dfc5.png" alt="">
+              <div class="project-title">
+                <span class="bracket">&lt;</span>
+                  Product Landing Page
+                <span class="bracket">/&gt;</span>
+              </div>
+            </button>
+            <div class="modal" id="modal4">
+              <div class="modal-header">
+                <div class="title">Product Landing Page</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                <img class="popup-image" src="https://user-images.githubusercontent.com/109019408/184623769-db2d8cdd-af9a-41f8-97a3-9ca53860dfc5.png" alt="project image">
+                <div class="about-project">
+                  <h2>Languages used</h2>
+                  <div class="language-container">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                  </div>
+                  <hr>
+                  <div class="project-description">
+                    <h4>About Project</h4>
+                    <p>A product landing page that I designed and created during my web development course at freeCodeCamp.</p>
+                  </div>
+                  <div class="project-site">
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://github.com/virajkhanna113/Product-Landing-Page-Project" target="_blank">Code</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                    <button class="project-site-button">
+                      <span class="bracket">&lt;</span>
+                        <a href="https://codepen.io/virajkhanna113/full/rNdQwME" target="_blank">Hosted</a>
+                      <span class="bracket">/&gt;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+        </div>
+        <a class="show-all-button" href="https://github.com/virajkhanna113?tab=repositories" target="_blank">Show All <span>&gt;</span></a>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-header">
+          <h2>Let's work together...</h2>
+        </div>
+        <div class="contact-links">
+          <a class="link" href="https://www.linkedin.com/in/viraj-khanna-2b5426215/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+        <div class="container">
+          <p>
+            Contact Form
+          </p>
+          <form class="form-container" action="https://formspree.io/f/mbjbjvrp" method="POST">
+            <input class="contact-box" type="text" name="Name" placeholder="Your Full Name" required>
+            <input class="contact-box" type="email" name="Email" placeholder="Your Email" required>
+            <textarea class="contact-box" name="Message" placeholder="Enter Your Message" cols="30" rows="10" required></textarea>
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

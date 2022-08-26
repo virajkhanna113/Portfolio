@@ -1,0 +1,28 @@
+nav {
+  position: fixed;
+  top: 0;
+  left : 0 ;
+  right : 0;
+  width: 100%;
+  background-color: var(--red);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0;
+  border-bottom: 2px solid black;
+}
+
+.page-parts {
+  padding-right: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 480px) {
+  .page-parts {
+    justify-content: center;
+  }
+}
