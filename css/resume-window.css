@@ -16,6 +16,12 @@
   transform: translate(-50%, -50%) scale(1.2);
 }
 
+@media (max-height: 800px) {
+  .resume.active {
+    transform: translate(-40%, -40%) scale(1.2);
+  }
+}
+
 .resume-header {
   padding: 10px 15px;
   display: flex;
